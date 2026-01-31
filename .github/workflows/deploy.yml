@@ -1,0 +1,28 @@
+name: Deploy Site
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    
+    - name: Display site files
+      run: |
+        echo "Files in repository:"
+        ls -lah
+        
+    - name: Verify index.html exists
+      run: |
+        if [ -f index.html ]; then
+          echo "✅ index.html found"
+        else
+          echo "❌ index.html not found"
+          exit 1
+        fi

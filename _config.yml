@@ -1,0 +1,17 @@
+# GitHub Pages Configuration
+theme: null
+exclude: [README.md, README_novo.md, DEVELOPMENT.md, QUICKSTART.md, CHECKLIST.md, SUMMARY.md, LAUNCH.md, LICENSE]
+
+# Site metadata
+title: Obrigado - Guia
+description: Informações sobre canetas emagrecedoras e saúde
+url: https://wonofre.github.io/Site-Obrigado---Guia
+baseurl: /Site-Obrigado---Guia
+
+# Build settings
+markdown: kramdown
+incremental: false
+safe: true
+
+# Output settings
+keep_files: [imagebg upscalle.png, styles.css, script.js, manifest.json, sw.js]
